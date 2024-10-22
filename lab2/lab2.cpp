@@ -166,5 +166,3 @@ void printWattsGenerated( double watts ){
         cout <<  " watts today"<<endl;
         }
 }
-
-

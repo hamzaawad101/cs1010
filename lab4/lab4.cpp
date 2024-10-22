@@ -108,9 +108,9 @@ void calculate(Big5 ba[], int numberOfElements ){
 
               -(ba[i].answers[33])-(ba[i].answers[38])-(ba[i].answers[43])-(ba[i].answers[48]);
                double  openness_to_experience = 8+(ba[i].answers[4])-
-               (ba[i].answers[9])+(ba[i].answers[14])-(ba[i].answers[19])+(ba[i].answers[24]). 
+               (ba[i].answers[9])+(ba[i].answers[14])-(ba[i].answers[19])+(ba[i].answers[24])-
 
-    (ba[i].answers[29])+(ba[i].answers[34])+(ba[i].answers[39])+(ba[i].answers[44])+(ba[i].answers[49]);
+          (ba[i].answers[29])+(ba[i].answers[34])+(ba[i].answers[39])+(ba[i].answers[44])+(ba[i].answers[49]);
           //normalize traits
           ba[i].normalizedTraits[EXTROVERSION]=(extroversion + 10)/10;
           ba[i].normalizedTraits[AGREEABLENESS]=(agreeableness + 10)/10;
@@ -169,13 +169,14 @@ void print(Big5 ba[], int numberOfElements){
           cout<<setw(6)<<"C";
           cout<<setw(6)<<"N";
           cout<<setw(6)<<"O"<<endl;
-    cout<<"---------------------------------------------“;
-    cout<<”-----------------------------"<<endl;
+    cout<<"---------------------------------------------";
+    cout<<"-----------------------------"<<endl;
 
         for(int i=0;i<numberOfElements;i++){  
       //for loop to print data for each person
           cout<<setw(15)<<left<<ba[i].lastName;
-          
+          cout<<setw(15)<<left<<ba[i].firstName;
+          cout<<setw(6)<<left<<ba[i].age;
           cout<<setw(6)<<left<<ba[i].normalizedTraits[EXTROVERSION];
           cout<<setw(6)<<left<<ba[i].normalizedTraits[AGREEABLENESS];
           cout<<setw(6)<<left<<ba[i].normalizedTraits[CONSCIENTIOUSNESS];

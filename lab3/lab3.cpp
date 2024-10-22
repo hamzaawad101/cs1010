@@ -24,7 +24,7 @@ int main (){
   input.open("haikus.dat");
   cout<<"Welcome to Mad Lib Haikus!"<<endl;
 
-    ;//open and check file if it exists
+    //open and check file if it exists
   if (input.fail ()){
    // when file could  not open an error message prints out
 cout << "Haiku file non-existent. Please contact the administrator" <<endl;  //error message for no files
@@ -82,7 +82,7 @@ void getwords(char word[MAX_WORDS][MAX_CH]){
   cin>>word[0];
   cout<<"Enter a two syllable adjective:";
   cin>>word[1];
-  cout<<"Enter a two syllable gerund (a verb ending in 'ing' like asking, trying";
+  cout<<"Enter a two syllable gerund (a verb ending in 'ing' like asking, trying:";
   cin>>word[2];
   char letter = word[2][0];  //fist letter of gerund is uppercased.
   char upperCaseLetter = toupper(letter);
